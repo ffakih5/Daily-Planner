@@ -70,14 +70,22 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
+@media screen and (max-width:600px) , screen and (max-width:768px) {
 
+  .row { 
 
+  }
 
-@media screen and (max-width: 600px) , screen and (max-width:768px) {
+  .hour {
+
+  }
 
   .saveBtn {
-  }
-  .saveBtn i:hover { 
-  }
 
+  }
+  
+  textarea {
 
+  }
+ 
+}
