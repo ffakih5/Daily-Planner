@@ -69,3 +69,15 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+
+
+
+@media screen and (max-width: 600px) , screen and (max-width:768px) {
+
+  .saveBtn {
+  }
+  .saveBtn i:hover { 
+  }
+
+
