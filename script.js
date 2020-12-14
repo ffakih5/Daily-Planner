@@ -1,6 +1,6 @@
 // display current day/date//
-var todaysDate = moment().format('dddd, MMMM Do YYYY');
-$("#currentDay").html(todaysDate);
+var todaysDate = moment().format('MMMM Do YYYY');
+$("#currentDay").text(todaysDate);
 console.log(todaysDate);
 
 //show time and description//
@@ -15,8 +15,10 @@ $(document).ready(function () {
     });
 
     //function for displaying hours//
+    
 
-   // $.each(function(){
+
+   //$.each(function(){
 
     
 
