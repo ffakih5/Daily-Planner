@@ -11,8 +11,8 @@ $(document).ready(function () {
         console.log("time");
 
         localStorage.setItem(time, text)
-
     });
+    for (var i = 0; i < drinkList.length; i++) {
 
 
 
