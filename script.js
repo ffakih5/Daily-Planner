@@ -1,2 +1,5 @@
 // display current day/date//
-m = moment('2013-03-01', 'YYYY-MM-DD')
+var currentDate = moment().format('2020-12-14', 'YYYY-MM-DD');
+$("#currentDay").text("currentDate");
+
+
