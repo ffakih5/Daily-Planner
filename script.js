@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     //function for displaying hours//
 
-    $.each(function(){
+   // $.each(function(){
 
     
 
