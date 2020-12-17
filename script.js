@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    $(".saveBtn").on("click", function() {
+        var inputText = $(this).siblings(".description").val();
+        var currentHour = $(this).parent().data("hour"); 
+        localStorage.setItem(currentHour, inputText)
+        console.log(inputText);
+
+        });
 
     var currentHour = moment().hours();
 
@@ -25,34 +32,7 @@ $(document).ready(function () {
     var todaysDate = moment().format('MMMM Do YYYY');
     $("#currentDay").html(todaysDate);
     
-    $(".saveBtn").on("click", function() {
-        var inputText = $(this).siblings(".description").val();
-        var currentTime = $(this).parent().data("hour"); //can edit to .data (hour) and add a data-hour to 
-        //text area for hours so we dont have to call id 
-        localStorage.getItem(currentTime, inputText)
-
-        });
-//}
-// display current day/date//
-//
-//console.log(todaysDate);
-//
-
-// var currentTime 
-
-//show time and description//
-
-   
-
-    //function for displaying hours//
-    
-
-
-   //$.each(function(){
-
-   //Get items
-
-   $("#hour9 .description").val("hour9");
+   $("#hour9 .description").val();
    console.log("hour9");
    $("#hour10 .description").val(localStorage.getItem("hour10"));
    $("#hour11 .description").val(localStorage.getItem("hour11"));
