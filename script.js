@@ -1,24 +1,42 @@
 $(document).ready(function () {
-    //var todaysDate = moment().format('MMMM Do YYYY');
-    //$("#currentDay").text(todaysDate);
-        var currentHour = moment().hours();
+
+     $(".saveBtn").on("click", function() {
+        var inputText = $(this).siblings(".description").val();
+        var currentTime = $(this).parent().data("hour"); //can edit to .data (hour) and add a data-hour to 
+        //text area for hours so we dont have to call id 
+        console.log(time);
+    
+        localStorage.setItem(currentTime, inputText)
+
+        });
+    
+    var currentHour = moment().hours();
 
     $(".description").each(function() {
     var selectedHour = $(this).data("hour");
     console.log(currentHour);
     console.log(selectedHour);
-    if(thisHour > selectedHour){
-        $(this).addClass("past");
-
+    
+    if (selectedHour < currentHour ){
+    $(this).addClass( "past" );
+        console.log(currentHour);
 
     }
+        if (selectedHour > currentHour){
+        $(this).addClass( "future" );
+        
+    }
 
+        if (selectedHour === currentHour){
+        $(this).addClass( "present" );
+    }
     
-         })
 
+    });
+    var todaysDate = moment().format('MMMM Do YYYY');
+    $("#currentDay").html(todaysDate);
 
-
-
+//}
 // display current day/date//
 //
 //console.log(todaysDate);
@@ -28,18 +46,7 @@ $(document).ready(function () {
 
 //show time and description//
 
-    $(".saveBtn").on("click", function() {
-    
-
-    var inputText = $(this).siblings(".description").val();
-    var currentTime = $(this).parent().data("hour"); //can edit to .data (hour) and add a data-hour to 
-    //text area for hours so we dont have to call id 
-    console.log(time);
-
-        localStorage.setItem(currentTime, inputText)
-
-
-    });
+   
 
     //function for displaying hours//
     
