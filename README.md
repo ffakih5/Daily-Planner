@@ -1,2 +1,2 @@
 # Daily-Planner
-![Daily Planner Screenshot](Daily Planner.png)
+![Daily Planner](images/Daily-Planner.png)
