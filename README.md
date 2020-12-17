@@ -8,6 +8,6 @@ _Where you can access your current schedule and easily key in any additions smoo
 _Simply select the time-block and type in your notes, then click save._
 
 ## Daily-Planner components:
--HTML
--CSS
--JavaScript/Jquery
+- HTML
+- CSS
+- JavaScript/Jquery
