@@ -36,7 +36,7 @@ $(document).ready(function () {
 
    $("#hour9 .description").val(localStorage.getItem("9"));
    console.log("hour9");
-  $("#hour10 .description").val(localStorage.getItem("10"));
+   $("#hour10 .description").val(localStorage.getItem("10"));
    console.log("hour10");
    $("#hour11 .description").val(localStorage.getItem("11"));
    $("#hour12 .description").val(localStorage.getItem("12"));
@@ -46,5 +46,4 @@ $(document).ready(function () {
    $("#hour16 .description").val(localStorage.getItem("16"));
    $("#hour17 .description").val(localStorage.getItem("17"));
 
-  
 });
