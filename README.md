@@ -1,8 +1,8 @@
 # Daily-Planner
 ![Daily Planner](images/Daily-Planner.png)
 
-_Your own personal Daily-Planner_
+_Your own personal Daily-Planner._
 
-_Where you can access your current schedule and easily key in any additions smoothly_
+_Where you can access your current schedule and easily key in any additions smoothly._
 
-_Simply select the time-block and type in your notes, then click save_
+_Simply select the time-block and type in your notes, then click save._
